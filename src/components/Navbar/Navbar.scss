@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+.navbar {
+  display: flex;
+  background: #2e2f30;
+  color: #40fdd7;
+  box-shadow: 0 4px 2px -2px #00000033;
+}
+
+.navbar-title {
+  margin-right: auto;
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+  padding: 12px 20px;
+}
