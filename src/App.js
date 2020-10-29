@@ -1,12 +1,22 @@
-import "./App.css";
+import React from "react";
+import { Route, Redirect, Switch } from "react-router-dom";
+import Received from "./components/Received/Received.jsx";
 import Home from "./components/Home/Home.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home />
+    <div className="app">
+      <Navbar />
+      <Switch>
+        {/* <Route path="/received" component={Received} /> */}
+        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Redirect to="/" />
+      </Switch>
     </div>
   );
-}
+};
 
 export default App;

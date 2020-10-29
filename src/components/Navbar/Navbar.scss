@@ -5,11 +5,26 @@
   background: #2e2f30;
   color: #40fdd7;
   box-shadow: 0 4px 2px -2px #00000033;
-}
-
-.navbar-title {
-  margin-right: auto;
-  font-size: 35px;
   font-family: "Oswald", sans-serif;
-  padding: 12px 20px;
+  justify-content: space-between;
+
+  &-title {
+    padding: 12px 20px;
+    font-size: 35px;
+  }
+
+  &-links {
+    display: flex;
+    font-size: 25px;
+    padding: 20px;
+
+    .link {
+      color: #40fdd7;
+      margin-right: 15px;
+      transition: color 0.5s ease;
+    }
+    .link:hover {
+      color: #a4f8e7;
+    }
+  }
 }

@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
+.received {
+  padding: 30px 80px;
+
+  .received-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Exo", sans-serif;
+
+    div {
+      width: 120px;
+    }
+  }
+}
