@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { Form, Input, InputNumber, Button, DatePicker } from "antd";
-// import { StoreContext } from "../../StoreContext";
-
+import { addItem } from "../../actions";
 import "./ItemForm.scss";
 
 const validateMessages = {
@@ -15,19 +15,21 @@ const validateMessages = {
 };
 
 const ItemForm = () => {
+  const dispatch = useDispatch();
+  const newItemAdded = useSelector((state) => state.newItemAdded);
   const [items, setItems] = useState();
-  //   const [itemsStore, setItemsStore] = useContext(StoreContext);
   const [form] = Form.useForm();
 
-  //   const onFinish = (fieldsValue) => {
-  //     const values = {
-  //       ...fieldsValue,
-  //       date: fieldsValue["date"].format("DD-MM-YYYY"),
-  //     };
-  //     setItems(values);
-  //     setItemsStore((prevItems) => [...prevItems, { values }]);
-  //     form.resetFields();
-  //   };
+  const onFinish = (fieldsValue) => {
+    const values = {
+      ...fieldsValue,
+      date: fieldsValue["date"].format("DD-MM-YYYY"),
+    };
+    setItems(values);
+    dispatch(addItem(values));
+    form.resetFields();
+  };
+  console.log(items);
 
   const config = {
     rules: [
@@ -44,7 +46,7 @@ const ItemForm = () => {
       form={form}
       layout="vertical"
       name="nest-messages"
-      //   onFinish={onFinish}
+      onFinish={onFinish}
       validateMessages={validateMessages}
       requiredMark={false}
     >
