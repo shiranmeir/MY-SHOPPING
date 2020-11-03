@@ -3,12 +3,17 @@
 .items-list {
   font-family: "Exo", sans-serif;
 
+  .ant-table-tbody > tr > td {
+    font-size: 15px;
+    padding: 25px;
+  }
+
   button {
     border: none;
     background-color: #40fdd72d;
     cursor: pointer;
     transition: background-color 0.5s ease;
-    margin-right: 20px;
+    margin-left: 40px;
   }
 
   button:hover {

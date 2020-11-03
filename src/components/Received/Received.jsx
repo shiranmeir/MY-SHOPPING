@@ -1,18 +1,21 @@
 import React, { useContext } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { ItemReceived } from "../../actions";
+
 import { Card, List } from "antd";
-// import { ReceivedContext } from "../../ReceivedContext";
 import "./Received.scss";
 import "antd/dist/antd.css";
 
 const Received = () => {
-  //   const [itemsReceived, setItemsReceived] = useContext(ReceivedContext);
+  const dispatch = useDispatch();
+  const myList = useSelector((state) => state.items);
+  const dataList = myList.filter((item) => item.received === true);
 
   return (
     <div className="received">
       <Card className="received-board">
-        jjjj
-        {/* <List
-          dataSource={itemsReceived}
+        <List
+          dataSource={dataList}
           bordered
           renderItem={(item) => (
             <List.Item>
@@ -24,7 +27,7 @@ const Received = () => {
               </div>
             </List.Item>
           )}
-        /> */}
+        />
       </Card>
     </div>
   );
