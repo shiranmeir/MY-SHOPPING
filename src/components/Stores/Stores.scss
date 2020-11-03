@@ -34,3 +34,12 @@
 .ant-tabs {
   padding: 0 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .store {
+    .ant-tabs {
+      padding: 20px;
+      width: unset;
+    }
+  }
+}

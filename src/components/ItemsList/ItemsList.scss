@@ -25,3 +25,16 @@
     padding: 10px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .items-list .ant-table-tbody > tr > td {
+    font-size: 8px;
+    padding: 5px;
+  }
+  .items-list button {
+    margin-left: unset;
+  }
+  .total {
+    font-size: 10px;
+  }
+}
