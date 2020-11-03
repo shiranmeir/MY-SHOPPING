@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Shiran-Meir-03-11-2020/static/css/main.8a69847a.chunk.css",
+    "main.js": "/Shiran-Meir-03-11-2020/static/js/main.7be1d05b.chunk.js",
+    "main.js.map": "/Shiran-Meir-03-11-2020/static/js/main.7be1d05b.chunk.js.map",
+    "runtime-main.js": "/Shiran-Meir-03-11-2020/static/js/runtime-main.f9a642b5.js",
+    "runtime-main.js.map": "/Shiran-Meir-03-11-2020/static/js/runtime-main.f9a642b5.js.map",
+    "static/css/2.8ddd9e3d.chunk.css": "/Shiran-Meir-03-11-2020/static/css/2.8ddd9e3d.chunk.css",
+    "static/js/2.130f4de5.chunk.js": "/Shiran-Meir-03-11-2020/static/js/2.130f4de5.chunk.js",
+    "static/js/2.130f4de5.chunk.js.map": "/Shiran-Meir-03-11-2020/static/js/2.130f4de5.chunk.js.map",
+    "index.html": "/Shiran-Meir-03-11-2020/index.html",
+    "static/css/2.8ddd9e3d.chunk.css.map": "/Shiran-Meir-03-11-2020/static/css/2.8ddd9e3d.chunk.css.map",
+    "static/css/main.8a69847a.chunk.css.map": "/Shiran-Meir-03-11-2020/static/css/main.8a69847a.chunk.css.map",
+    "static/js/2.130f4de5.chunk.js.LICENSE.txt": "/Shiran-Meir-03-11-2020/static/js/2.130f4de5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9a642b5.js",
+    "static/css/2.8ddd9e3d.chunk.css",
+    "static/js/2.130f4de5.chunk.js",
+    "static/css/main.8a69847a.chunk.css",
+    "static/js/main.7be1d05b.chunk.js"
+  ]
+}
