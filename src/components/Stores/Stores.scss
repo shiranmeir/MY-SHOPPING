@@ -1,6 +1,36 @@
-.store-list {
-  .store-list-card {
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
+
+.store {
+  font-family: "Exo", sans-serif;
+  font-size: 15px;
+
+  .ant-card-body {
+    min-height: 550px;
     display: flex;
-    justify-content: space-between;
   }
+
+  &-list {
+    min-height: 200px;
+    max-height: 300px;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-style: outset;
+    box-shadow: 0 10px 6px -6px rgb(167, 166, 166);
+
+    &-title {
+      text-decoration: underline;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  }
+}
+
+.ant-tabs {
+  padding: 0 20px;
 }
